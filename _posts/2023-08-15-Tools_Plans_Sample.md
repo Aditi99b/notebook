@@ -2,15 +2,17 @@
 toc: true
 comments: false
 layout: post
-title: Sample Daily Plan 
-description: Example Blog!!!  This shows planning and notes from hacks.
+title: Daily Plan 
+description: My day to day plan with my partner, Cindy. 
 type: plans
 courses: { compsci: {week: 0} }
 ---
 
-### PBL Unit 1 / Week 0
-Learning outcome.  Installing Tools and showing usage of VSCode.
-- Wednesday - Pick pair share partner, Pick crossover pair, Establish team of four.  Spend some time talking and getting to know each other, particularly with Computer Science experience and goals.  You should be matched with someone that has similar experience.
-- Thursday - Setup Tools on laptop and/or Cloud Computer.
-- Friday - Review and test as a Pair. Spend 25 minutes at one keyboard then switch for next 25 minutes.
+### This Week 8/28/23
+Goal:  To have the tools working and to custamize and add other applications to the blog. 
+- Monday - Review Jupyter notebook set up and start working on Python. 
+- Tuesday - Continue working on Python and change Github settings. 
+- Wednesday - Add applications to blog and get ready for showcase. 
+- Thursday - Peer showcase, make sure all applications are working. 
+- Friday - Review peer showcase and reflect on improvements. 
 
