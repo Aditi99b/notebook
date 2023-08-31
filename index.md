@@ -20,4 +20,4 @@ title: Student Blog
 <p style="text-align: center; font-weight:800; font-size: 40px">Tools Hack</p> 
 <p style="text-align: center; font-weight:600; font-size: 20px; color:#00B07B">My favorite tool is VS Code because it has a good user interface and it allows me to code easily. I enjoy learning the different commands through practice in VS Code!</p> 
 
-![Alt text](images/Screenshot_20230824_172938_Gallery-transformed_1.jpg)
+![Alt text](images/Screenshot_20230824_172938_Gallery-transformed_1.jpg) 
