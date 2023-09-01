@@ -2,11 +2,11 @@
 toc: true
 comments: false
 layout: post
-title: HTML Game! 
-description: Here's a number guessing game for HTML. 
-type: hacks
-courses: { compsci: {week: 3} }
+title: Daily Plan Week 0
+description: My day to day plan with my partner, Cindy. 
+type: plans
+courses: { compsci: {week: 0} }
 ---
 
-
-To play the "Guess the Number" game, [Title](../_layouts/game.html).
+### This Week 8/14/23
+To play the "Guess the Number" game, [Click here!](../_layouts/game.html).
