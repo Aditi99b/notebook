@@ -27,7 +27,7 @@ Up glider   Down Glider   Very Fun
     }
 
     .cell {
-    background-color: royalblue;
+    background-color: #936DC1;
     border: 1px solid black;
     }
 </style>
