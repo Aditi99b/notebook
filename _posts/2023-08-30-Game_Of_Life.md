@@ -8,18 +8,11 @@ type: hacks
 courses: { compsci: {week: 2} }
 ---
 
+{% include nav_frontend.html %}
+
 {% comment %}
 Conway's Game of Life https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 {% endcomment %}
-
-## Try Game by checking boxes with following patterns.
-
-```
-Up glider   Down Glider   Very Fun
- xxx           x            x
-   x            x            x
-  x           xxx           xxx
-```
 
 <style>
     #container {
@@ -27,7 +20,7 @@ Up glider   Down Glider   Very Fun
     }
 
     .cell {
-    background-color: #936DC1;
+    background-color: royalblue;
     border: 1px solid black;
     }
 </style>
@@ -210,4 +203,3 @@ function start() {
 }
 
 </script>
-
