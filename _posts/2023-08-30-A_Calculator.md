@@ -72,6 +72,12 @@ HTML implementation of the calculator.
       <div class="calculator-number">0</div>
       <div class="calculator-number">.</div>
       <div class="calculator-equals">=</div>
+      <!-- Add a container for the calculation history -->
+      <div class="calculation-history">
+       <h2>Calculation History</h2>
+       <ul id="history-list"></ul>
+        </div>
+
   </div>
 </div>
 
@@ -81,6 +87,41 @@ HTML implementation of the calculator.
 var firstNumber = null;
 var operator = null;
 var nextReady = true;
+// Initialize the calculation history array
+var calculationHistory = [];
+
+// Function to update and display the calculation history
+function updateHistory() {
+  const historyList = document.getElementById("history-list");
+  historyList.innerHTML = "";
+  calculationHistory.forEach((calculation, index) => {
+    const listItem = document.createElement("li");
+    listItem.textContent = `Calculation ${index + 1}: ${calculation}`;
+    historyList.appendChild(listItem);
+  });
+}
+
+// Modify the 'equal' function to add calculations to the history
+function equal() {
+  if (firstNumber !== null) {
+    const result = calculate(firstNumber, parseFloat(output.innerHTML));
+    calculationHistory.push(`${firstNumber} ${operator} ${output.innerHTML} = ${result}`);
+    updateHistory();
+    firstNumber = result;
+    output.innerHTML = result.toString();
+    nextReady = true;
+  }
+}
+
+// Modify the 'clearCalc' function to clear the history as well
+function clearCalc() {
+  firstNumber = null;
+  output.innerHTML = "0";
+  nextReady = true;
+  calculationHistory = [];
+  updateHistory();
+}
+
 // build objects containing key elements
 const output = document.getElementById("output");
 const numbers = document.querySelectorAll(".calculator-number");
