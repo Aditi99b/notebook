@@ -33,14 +33,15 @@ HTML implementation of the calculator.
 -->
 <style>
   .calculator-output {
-    /* calulator output
-      top bar shows the results of the calculator;
-      result to take up the entirety of the first row;
-      span defines 4 columns and 1 row
+    /* the calculator output will be on the top of the calculator, taking up the grid of 4 blocks 
+    */
+
+    /* there are 4 columns 
     */
     grid-column: span 4;
     grid-row: span 1;
  
+ /* black border, centered */
     border-radius: 10px;
     padding: 0.25em;
     font-size: 20px;
@@ -52,13 +53,13 @@ HTML implementation of the calculator.
 </style>
 
 
-<!-- Add a container for the animation -->
+<!-- a container for calculator history -->
 <div class="calculation-history">
     <h2>Calculation History</h2>
     <ul id="history-list"></ul>
 </div>
 
-
+<!-- container for animation -->
 <div id="animation">
   <div class="calculator-container">
       <!--result-->
@@ -117,15 +118,15 @@ numbers.forEach(button => {
 
 
 // Number action
-function number (value) { // function to input numbers into the calculator
+function number (value) { // function to input numbers into the calculator: makes sure its not a decimal 
     if (value != ".") {
-        if (nextReady == true) { // nextReady is used to tell the computer when the user is going to input a completely new number
+        if (nextReady == true) { // nextReady tells the computer that the user will input a new number 
             output.innerHTML = value;
             if (value != "0") { // if statement to ensure that there are no multiple leading zeroes
-                nextReady = false;
+                nextReady = false; // the user is not inputting a new number 
             }
         } else {
-            output.innerHTML = output.innerHTML + value; // concatenation is used to add the numbers to the end of the input
+            output.innerHTML = output.innerHTML + value; 
         }
     } else { // special case for adding a decimal; can't have two decimals
         if (output.innerHTML.indexOf(".") == -1) {
@@ -138,8 +139,8 @@ function number (value) { // function to input numbers into the calculator
 
 // Operation buttons listener
 operations.forEach(button => {
-  button.addEventListener("click", function() {
-    operation(button.textContent);
+  button.addEventListener("click", function() { //when the user clicks on a button, the specific function will be used 
+    operation(button.textContent); //when the user clicks on a button, it starts the operation function 
   });
 });
 
@@ -161,25 +162,25 @@ function operation (choice) { // function to input operations into the calculato
 
 
 // Calculator
-function calculate (first, second) { // function to calculate the result of the equation
-    let result = 0;
+function calculate (first, second) { // function to calculate the result of the equation, first is number 1, second is number 2
+    let result = 0; //stores the result of the calculation 
     switch (operator) {
         case "+":
-            result = first + second;
+            result = first + second; //addition 
             break;
         case "-":
-            result = first - second;
+            result = first - second; //subtraction 
             break;
         case "*":
-            result = first * second;
+            result = first * second; //mulitplication 
             break;
         case "/":
-            result = first / second;
+            result = first / second; //divison 
             break;
         default:
             break;
     }
-    return result;
+    return result; //returns the calculated result 
 }
 
 
