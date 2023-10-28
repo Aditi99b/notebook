@@ -4,8 +4,8 @@ comments: false
 layout: post
 title: Passion Project 
 description: Our plan for our Passion Project 
-type: plans
-courses: { compsci: {week: 6} }
+type: hacks
+courses: { compsci: {week: 5} }
 ---
 ## Lung Cancer Teaching:
 
