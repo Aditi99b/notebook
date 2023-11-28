@@ -1,18 +1,24 @@
 # CSP course meta data
-Unit1:
-  title: Build a Lab Notebook
+Tri1Unit1:
+  title: Build a Lab Notebook  
   description:  Aditi Bharadwaj's Lab Notebook. Partners with Cindy L.  
   start: 0
   end: 3
 
-Unit2:
+Tri1Unit2:
   title: Agile Methodology 
   description:  Aditi Bharadwaj's Lab Notebook. Scrum master- Aditi. Devops- Eshika. Backend- Cindy. Frontend- Samhita.
   start: 4
   end: 7
 
-Unit3:
+Tri1Unit3:
   title: Web Application, Data, and Night at the Museum 
   description: Build a passion project about climate change and lung cancer. 
   start: 8
   end: 11
+
+Tri2Unit1: 
+  title: Trimester 2
+  description: First unit of Tri2
+  start: 12
+  end: 15
