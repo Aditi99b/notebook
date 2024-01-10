@@ -3,7 +3,7 @@ toc: True
 comments: False
 layout: post
 title: Collegeboard MC Reflections 
-description: Student teaching
+description: Corrections for the MC on Collegeboard (2020 Practice Exam 1)
 type: tangibles
 courses: {'compsci': {'week': 12}}
 ---
